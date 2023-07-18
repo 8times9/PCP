@@ -1,0 +1,304 @@
+﻿/*Navbar and Footer Classes*/
+
+.nav-button {
+    font-weight: 900;
+}
+
+.menuburger {
+    display: flex;
+    align-content: center;
+}
+
+.navbar-nav {
+    background-color: white;
+    flex-direction: row;
+}
+
+.navbar-hamburger {
+    flex-direction: column;
+    background-color: white;
+}
+
+.logo {
+    width: 5em;
+    height: 5em;
+    margin-left: 2vh;
+}
+
+.footercustom {
+    background-color: #212922;
+    height: 10em;
+    color: #dedede;
+    align-items: center;
+}
+
+/*Navbar IDs*/
+
+#LoginSignupMenuItem {
+    display:block;
+}
+
+#LogoutMenuItem {
+    display: none;
+}
+
+#AdminMenuItem {
+    display: none;
+}
+
+/*Universal Classes*/
+/*Begin universal text classes*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight:bold;
+    font-size:2.5em;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.25em;
+    font-family: 'Montserrat', sans-serif;
+    color: #212922;
+}
+
+.form-control {
+    display:flex !important;
+    justify-content:center !important;
+    justify-items:center !important;
+    align-items:center !important;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+    background: rgb(0, 184, 101);
+}
+/*End universal text classes*/
+
+/*Begin universal content and interactive element classes*/
+
+.flex-wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.threewidephotos {
+    max-width: 30em;
+    border-radius: 1.5em;
+}
+
+.rounded-photo {
+    border-radius:1.5em;
+}
+
+a:hover {
+    color: #242922;
+    font-weight: bold;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: .5em;
+    padding: 14px 30px;
+    font-weight: 900;
+    border: 0px;
+    box-shadow: 2px 2px 0px 0px rgb(0, 107, 59);
+    background-color: rgb(0, 184, 101);
+}
+
+    .button:hover {
+        background-color: rgb(33, 41, 34) !important;
+        box-shadow: 0px 0px 0px 0px rgb(0, 107, 59);
+        transition: 0.7s;
+    }
+
+.cancel-button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ff582f;
+    border-radius: .5em;
+    padding: 14px 30px;
+    font-weight: 900;
+    border: 0px;
+    box-shadow: 2px 2px 0px 0px rgb(178, 61, 32);
+}
+
+    .cancel-button:hover {
+        background-color: #b23d20;
+        box-shadow: 0px 0px 0px 0px rgb(178, 61, 32);
+        transition: 0.7s;
+    }
+
+.bottom-border {
+    border-bottom: solid .25em #00B865;
+}
+
+.top-border {
+    border-top: solid .25em #00B865;
+}
+
+.greenbackground {
+    background-color: #3E6259;
+    color: white;
+}
+
+.whitelink {
+    color: white;
+}
+
+    .whitelink:hover {
+        color:white;
+        font-weight:bold;
+    }
+
+.greenlink {
+    color: #3E6259;
+}
+
+input[type="radio"] {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+input[type="checkbox"] {
+    margin-left:.5em;
+    margin-right:.5em;
+}
+
+/*End universal image, graphic, and button classes*/
+
+/*Homepage Classes*/
+homebanner {
+    height: 50vh;
+    background-image: url('../Images/Home_Banner.jpg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bannertext {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.rating-stars {
+    font-size:2em;
+}
+
+/*AboutUs Page Classes*/
+.carouselcustom {
+    padding-right:0em !important;
+    padding-left:0em !important;
+}
+
+.carousel-no-padding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.headshotsize {
+    font-size: 1em;
+}
+
+.headshot {
+    border-radius:1.5em;
+}
+
+/*Services Classes*/
+.service-row {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+.services-selection {
+    display: flex;
+    justify-content:center;
+    justify-items:flex-start;
+    align-content:start;
+    align-content: start;
+}
+
+.all-border {
+    border: solid .01em lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*Login/Signup/Admin Page Classes*/
+
+.mylabel {
+    display: flex;
+    justify-content: end;
+    align-content:center;
+    font-weight:bold;
+    align-items:center;
+    padding-right:3em;
+    padding-left:3em;
+}
+
+.controlspacing {
+    margin-top: 1.5rem;
+}
+
+.validator-alignment {
+    display:flex;
+    justify-content:start;
+    justify-items:start;
+    align-content:center;
+    align-items:center;
+    padding-left:3em;
+}
+
+#password-message {
+    padding-right:3em;
+}
+
+/*Mobile Overrides*/
+@media only screen and (max-device-width: 576px) {
+    .searchbarmobile {
+        justify-content: start !important;
+    }
+
+    .mylabel {
+        justify-content:center;
+    }
+
+    .controlspacing {
+        margin-top:.5em;
+        display:flex;
+        justify-content:center;
+    }
+    .validator-alignment {
+        justify-content:center;
+        justify-items:center;
+        align-content:center;
+        align-items:center;
+        padding-left:0em;
+        flex-direction:column;
+    }
+    #password-message {
+        padding-left:3em;
+        padding-right:3em;
+    }
+    .form-control {
+        width:70vw !important;
+    }
+}
